@@ -1,5 +1,6 @@
 [tools]
 direnv = "latest"
+pre-commit = "latest"
 python = "3.13"
 uv = "latest"
 
@@ -11,3 +12,6 @@ experimental = true
 [env]
 APP_REPO = 'devops-study-app'
 GITOPS_REPO = 'devops-study-app-gitops'
+
+[hooks]
+enter = "bash ./scripts/setup_project"
